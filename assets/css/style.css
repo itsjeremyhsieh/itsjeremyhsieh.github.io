@@ -522,12 +522,13 @@ section .container {
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
   transition: ease-in-out 0.3s;
+
 }
 
 .interests .icon-box i {
   font-size: 32px;
-  padding-right: 10px;
   line-height: 1;
+
 }
 
 .interests .icon-box h3 {
@@ -537,6 +538,7 @@ section .container {
   line-height: 1;
   font-size: 16px;
   color: #fff;
+  text-align: center;
 }
 
 .interests .icon-box:hover {
