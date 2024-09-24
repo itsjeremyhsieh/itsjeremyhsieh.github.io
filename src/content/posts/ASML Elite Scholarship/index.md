@@ -4,7 +4,7 @@ published: 2024-09-24
 description: "How to use this blog template."
 tags: ["ASML菁英獎學金", "實習"]
 category: 實習
-draft: true
+draft: false
 ---
 
 ASML 為引領全球半導體產業創新的領導者，為全球晶片製造商提供全方位的微影系統、軟體與服務，來進行晶片量產，客戶包含 TSMC、Samsung、Intel 等。而台灣是 ASML 在亞洲最大的據點，ASML設立菁英獎學金，提供每年八位學生（大學以上）高額獎學金與實習機會。
