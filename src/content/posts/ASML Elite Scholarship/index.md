@@ -55,10 +55,8 @@ HireVue系統有練習題可以讓使用者在正式錄影前先適應這種模�
 
 當你收到HR的電話或是email通知你進入Master Class時，就代表成功進到最後一關了。這個Master Class其實就是團體面試／認識公司／交朋友的一日活動。
 
-<!-- ![Master Class Schedule](schedule.png){style="display: block; margin: 0 auto"} -->
-<div align="center">
-    <img src='./schedule.png' alt='Master Class Schedule'>
-</div>
+![Master Class Schedule](schedule.png)
+
 
 Master Class的活動會需要大約半天多一點，早上是團體面試，會依4個人一組，面對各部門主管。面試過程全程使用英文，依照面試者喜好，可能是隨機順序，也可能是依照座位發言回答問題。
 
@@ -79,7 +77,7 @@ HR會幫你配對到覺得和你專業相關的部門，我在媒合時，也和
 
 面試完成的當天，我傳email詢問HR我的面試結果。很意外的是，HR告知我TL很喜歡我，因此我被錄取了！而接下來就是在Me@ASML的旅程。
 
-![獎學金得主的合照（拍照時是closing ceremony，當時我已經在新加坡讀書了qq，感謝實習好夥伴把我P上去）](friends.jpg){style="display: block; margin: 0 auto"}
+![獎學金得主的合照（拍照時是closing ceremony，當時我已經在新加坡讀書了qq，感謝實習好夥伴把我P上去）](friends.jpg)
 
 
 # 結語
