@@ -57,7 +57,7 @@ HireVue系統有練習題可以讓使用者在正式錄影前先適應這種模�
 
 <!-- ![Master Class Schedule](schedule.png){style="display: block; margin: 0 auto"} -->
 <div align="center">
-    <img src='schedule.png' alt='Master Class Schedule'>
+    <img src='./schedule.png' alt='Master Class Schedule'>
 </div>
 
 Master Class的活動會需要大約半天多一點，早上是團體面試，會依4個人一組，面對各部門主管。面試過程全程使用英文，依照面試者喜好，可能是隨機順序，也可能是依照座位發言回答問題。
