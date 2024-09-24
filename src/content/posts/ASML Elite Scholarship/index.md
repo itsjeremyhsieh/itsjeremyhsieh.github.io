@@ -55,7 +55,10 @@ HireVue系統有練習題可以讓使用者在正式錄影前先適應這種模�
 
 當你收到HR的電話或是email通知你進入Master Class時，就代表成功進到最後一關了。這個Master Class其實就是團體面試／認識公司／交朋友的一日活動。
 
-![Master Class Schedule](schedule.png){style="display: block; margin: 0 auto"}
+<!-- ![Master Class Schedule](schedule.png){style="display: block; margin: 0 auto"} -->
+<div align="center">
+    <img src='schedule.png' alt='Master Class Schedule'>
+</div>
 
 Master Class的活動會需要大約半天多一點，早上是團體面試，會依4個人一組，面對各部門主管。面試過程全程使用英文，依照面試者喜好，可能是隨機順序，也可能是依照座位發言回答問題。
 
