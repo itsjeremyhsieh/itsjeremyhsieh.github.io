@@ -1,7 +1,7 @@
 ---
-title: "[CS5446] Reinforcement Learning"
+title: "[CS5446] Reinforcement Learning Foundation"
 published: 2024-09-11
-description: "#4 Introduction to Reinforcement Learning"
+description: "#5 Introduction to Reinforcement Learning"
 tags: ["NUS", "AI Planning"]
 category: CS5446
 draft: false
