@@ -26,20 +26,20 @@ draft: false
     - Utility function: $U(s)$ express the desirability of a state $s$
 - rational: to maximize the maximum expected utility (MEU)
 - EU of action: average of utility value for all outcomes, weighted by probability
-    - $EU(a) = \sum_{s'}P(Result(a) = s')U(s') = \sum_{s'} \sum_{s} P(s) P(s'|s, a) U(s')$
+    - $EU(a) = \sum_{s'}P(Result(a) = s')U(s') = \sum_{s'} \sum_{s} P(s)P(s'|s, a)U(s')$
 ## Axioms of Utility
 - notation:
     - $A ≻ B$: agent prefers A to B
-    - $A ~ B$: agent is indifferent between A and B
+    - $A ∼ B$: agent is indifferent between A and B
     - $A ≽ B$: agent prefers A over B or is indifferent between them
 - 6 rules
-    - Orderability: must be one of $A ≻ B$, $A ~ B$, or $B ≻ A$
+    - Orderability: must be one of $A ≻ B$, $A∼B$, or $B ≻ A$
     - Transitivity: If $A ≻ B ∧ B ≻ C$ => $A ∧ C$
     - Continuity: If $A ≻ B ≻ C$ => there exist some probability $p$ for which the agent will be indifferent between
         1. getting $B$ for sure
         2. getting the lottery that gets $A$ with probability $p$ and $C$ with probability $1-p$
         - ![Continuity](continuity.png)
-    - Substitutability: If $A ~ B$ => $[p, A; 1-p, C] ~ [p, B; 1-p, C]$
+    - Substitutability: If $A ∼ B$ => $[p, A; 1-p, C] ∼ [p, B; 1-p, C]$
     - Monotonicity: If $A ≻ B$ and $p > q$ => $[p, A; 1-p, B] ≻ [q, A; 1-q, B]$
     - Decomposibility: 
         - ![Decomposibility](decomposibility.png)
@@ -49,6 +49,7 @@ draft: false
 Agent's behavior **doesn't change** if $U$ is subjected to an **affine transformation**  
 $U'(s) = aU(s) + b$ with $a > 0$
 :::
+
 ## Utility function
 - encode preferences
 - translate "desirability" measures $x$ into utility units $U(x)$
@@ -57,7 +58,7 @@ $U'(s) = aU(s) + b$ with $a > 0$
 
 1. Probability equivalent
     - set $u_{\perp} = 0; u_{\tau} = 1$
-    - find $p$ s.t $U(s) ~ [p, u_{\tau} ; 1-p, u_{\perp}]$ => $U(s) = p$
+    - find $p$ s.t $U(s) ∼ [p, u_{\tau} ; 1-p, u_{\perp}]$ => $U(s) = p$
 2. Certainty Equivalent (CE)
     - how much $ the lottery is equivalent to in your mind.
     - $U(CE) = EU(Lottery)$
