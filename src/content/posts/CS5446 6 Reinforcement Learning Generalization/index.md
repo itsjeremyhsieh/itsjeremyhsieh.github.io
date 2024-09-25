@@ -7,7 +7,9 @@ category: CS5446
 draft: false
 ---
 
-> Problem: Tabular representation cannot scale big  
+:::caution
+Problem: Tabular representation cannot scale big  
+:::
 
 Two solutions:
 1. Function Approximation
@@ -27,7 +29,7 @@ Two solutions:
 1. Approximate Monte Carlo Learning
 - Supervised learning
 - update parameters ater each trial
-- L2 loss: $1/2 (\hat {U}_ɵ(s)- u_j(s))^2$
+- L2 loss: $1/2 (\hat{U}_ɵ(s)- u_j(s))^2$
 - Update:  $ɵ_i ← ɵ_i + ɑ (u_j(s) - \hat{U}_ɵ(s)) \frac{\partial \hat{U}_ɵ(s)}{\partial ɵ_i}$
     - for each parameter
 
