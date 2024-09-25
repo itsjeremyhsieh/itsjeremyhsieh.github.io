@@ -9,7 +9,7 @@ draft: false
 
 # Classical AI Planning
 ## Basic terminology and definition
-- Environment: Discrete, Determistic, Static, Fully observable
+- Environment: Discrete, Deterministic, Static, Fully observable
 - Representation: PDDL from STRIPS
 - Terms definition:
     - fluent: aspect of world that changes over time.
