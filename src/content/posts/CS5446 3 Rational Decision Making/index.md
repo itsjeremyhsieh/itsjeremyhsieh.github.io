@@ -20,7 +20,7 @@ draft: false
 - Decision Model:
     - Actions: $a ∈ A$
     - States: $s ∈ S$ with probability of reaching: $P(s)$
-    - Transition model: $P(s'|s, a) probability that action $a$ in state $s$ reaches state $s'$
+    - Transition model: $P(s'|s, a)$ probability that action $a$ in state $s$ reaches state $s'$
     - Result: $Result(a)$ 
     - Probability of outcome state $s'$: $P(Result(a) = s') = \sum_{s} P(s)P(s'|s,a)$
     - Utility function: $U(s)$ express the desirability of a state $s$
@@ -69,9 +69,9 @@ $U'(s) = aU(s) + b$ with $a > 0$
 - e.g. Win 1 million so far. A lottery: 50% loss all, 50% add 1.5 million. Play?
     => $[0.5, 0; 0.5, 2.5] = 1.25 > 1$, Play!
 ## Risk Attitude and risk premium
-- $Risk_premium = EMV - CE$
+- Risk_premium = EMV - CE
     - how much money are you willing to buy the lottery?
-- Risk-averse: $EMV > CE$, $Risk_premium > 0$ (不想吃虧)
-- Risk-seeking: $EMV < CE$, $Risk_premium < 0$ (賭下去就對了)
-- Risk neutral: $EMV = CE$, $Risk_premium = 0$
+- Risk-averse: $EMV > CE$, $RiskPremium > 0$ (不想吃虧)
+- Risk-seeking: $EMV < CE$, $RiskPremium < 0$ (賭下去就對了)
+- Risk neutral: $EMV = CE$, $RiskPremium = 0$
 
