@@ -18,8 +18,8 @@ draft: false
     - to calculate the loss between $\tilde y$ and $y$
     - L1: $L(x, y| w, b) = |\tilde y - y|$
     - L2: $L(x, y| w, b) = \frac{1}{2} |\tilde y - y|^2$
-    - Global loss $J(w,b) = \frac{1}{m} \sum_i L(x^i, y^i | w, b)$ (data points are independent to each other)
-    - $min J(w,b) = min_{w,b} \frac{1}{2m} \sum_i (wx^i + b - y^i)^2$
+    - Global loss $J(w,b) = \frac{1}{m} \sum_{i=1}^m L(x^i, y^i | w, b)$ (data points are independent to each other)
+    - $min J(w,b) = min_{w,b} \frac{1}{2m} \sum_{i=1}^m (wx^i + b - y^i)^2$
         - the $2$ in $\frac{1}{2m}$ is for calculation convenience
     - Gradient descent
         - optimization
