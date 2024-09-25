@@ -14,7 +14,7 @@ draft: false
     1. add more edges: easier to find path to goal
         - ignore precondition from action (all actions can be chosen at any state)
             - e.g. 8-Puzzle
-                - remove the precondition $ Blank(s_2) ∧ Adjacent(s1, s2)$
+                - remove the precondition $ Blank(s_2) ∧ Adjacent(s_1, s_2)$
                 - now tiles can swap with any tiles, doesn't have to be adjacent
                 - the heuristic estimate becomes # misplaced tiles
         - ignore delete list (no reversing), assume goal states are all positive.
@@ -27,11 +27,11 @@ draft: false
         - e.g. Air Cargo Transportation
             - Original problem:
                 - 10 airports, 50 planes, 200 cargos.
-                - Total # of states: $10^50^$ (planes at airports) $× (10+50)^200^$ (cargos at airports or planes) $= 10^405^$
+                - Total # of states: $10^{50}$ (planes at airports) $× (10 + 50)^{200}$ (cargos at airports or planes) $= 10^{405}$
 
             - Relaxed problem:
-                - All cargos are in 5 airports, all cargos in same airport have same destination. => 5 big plands, 5 big cargos
-                - Total # of states: $10^5 × (10+5)^5 = 10^11^$
+                - All cargos are in 5 airports, all cargos in same airport have same destination. => 5 big planes, 5 big cargos
+                - Total # of states: $10^5 × (10 + 5)^5 = 10^{11}$
 
 # Hierarchical Planning
 > to manage complexity
