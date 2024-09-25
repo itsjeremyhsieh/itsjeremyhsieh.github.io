@@ -7,7 +7,8 @@ category: CS5446
 draft: false
 ---
 
-> Problem: Tabular representation cannot scale big
+> Problem: Tabular representation cannot scale big  
+
 Two solutions:
 1. Function Approximation
 2. Policy Search
