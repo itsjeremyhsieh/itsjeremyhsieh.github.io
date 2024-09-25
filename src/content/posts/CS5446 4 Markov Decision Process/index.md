@@ -1,6 +1,6 @@
 ---
 title: "[CS5446] Markov Decision Process"
-published: 2024-09-
+published: 2024-09-04
 description: "#3 Markov Decision Process"
 tags: ["NUS", "AI Planning"]
 category: CS5446
