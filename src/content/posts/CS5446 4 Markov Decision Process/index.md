@@ -35,7 +35,7 @@ draft: false
 
 ## Infinite horizon:
 - no fixed deadline, may run forever
-- **stationary** $π^*$
+- **Stationary** $π^*$
 - But *R* may be infinite, hard to compare policies.
     1. use discount factor $γ < 1$, utility becomes finite
         - $U_h([S_0, a_0, s_1, a_1,s_2, ...]) ≤ R_{max}/(1-γ)$
@@ -62,8 +62,8 @@ draft: false
     1. **Policy evaluation**: uses the given policy to calculate the utility of each state
     2. **Policy improvement**: 
         - find the best action for $π_i$ via one-step lookahead based on $U_i$
-        - $π_{i+1}(s) = argmax_a \sum_{s'} P(s'|s,a)[R(s,a,s') + γU_{π_k}(s')]
-- Complexity: $S = n$ linear equations with $n$ unknowns -> **O(n^3)** 
+        - $π_{i+1}(s) = argmax_a \sum_{s'} P(s'|s,a)[R(s,a,s') + γU_{π_k}(s')]$
+- Complexity: $S = n$ linear equations with $n$ unknowns -> **$O(n^3)$** 
 - Policy iteration may be faster than value iteration.
 
 # Online Algorithms
@@ -85,14 +85,14 @@ draft: false
 - ![Monte Carlo](MC.png)
 - Selection: select the leave nodes to expand
     - Selection policy: Upper Confidence Bounds applied to Trees(UCT)
-        - $π_{UCT}(n) = argmax_{a}(\hat{q}(n,a) + c \sqrtln(N(n)/N(n,a)))$
+        - $π_{UCT}(n) = argmax_{a}(\hat{q}(n,a) + c \sqrt(N(n)/N(n,a)))$
             - $\hat{q}(n,a)$ is the average return of all trials (exploitation)
-            - $c$ is constant balancing exploitation & exploration
-            - $N(n) is # tials through node $n$
-            - $N(n,a)$ is $ trials through node $n$ starting with $a$
-        - $UCB(n) = U(n)/N(n) + C \sqrtln(log N(Parent(n))/N(n))$
-            - $N(Parent(n))$ is the # parent node been visited
-            - $N(n)$ is the # node $n$ been visited.
+            - $c$: constant balancing exploitation & exploration
+            - $N(n)$: # trials through node $n$
+            - $N(n,a)$: $ trials through node $n$ starting with $a$
+        - $UCB(n) = U(n)/N(n) + C \sqrt(log N(Parent(n))/N(n))$
+            - $N(Parent(n))$: the # parent node been visited
+            - $N(n)$: the # node $n$ been visited.
 - Expansion: one or more nodes created
 - Simulation: estimate the value of the node by completing one simulation run (run to leaf)
 - Backup: update the result back to root.
