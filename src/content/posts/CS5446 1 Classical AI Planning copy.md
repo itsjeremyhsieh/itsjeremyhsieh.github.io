@@ -1,6 +1,6 @@
 ---
 title: "[CS5446] Classical AI Planning"
-published: 2024-09-25
+published: 2024-08-14
 description: "#1 Classical AI Planning"
 tags: ["NUS", "AI Planning"]
 category: CS5446

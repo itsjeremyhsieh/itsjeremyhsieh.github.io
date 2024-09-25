@@ -1,6 +1,6 @@
 ---
 title: "[CS5446] Real World Planning & Acting"
-published: 2024-09-25
+published: 2024-08-21
 description: "#2 Heuristics & Hierarchical planning"
 tags: ["NUS", "AI Planning"]
 category: CS5446
