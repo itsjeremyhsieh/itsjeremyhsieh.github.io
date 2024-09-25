@@ -17,10 +17,10 @@ draft: false
 - Loss funciton
     - to calculate the loss between $\tilde y$ and $y$
     - L1: $L(x, y| w, b) = |\tilde y - y|$
-    - L2: $L(x, y| w, b) = 1/2 |\tilde y - y|^2$
-    - Global loss $J(w,b) = 1/m \sum_i L(x^i, y^i | w, b)$ (data points are independent to each other)
-    - $min J(w,b) = min_{w,b} 1/(2m) \sum_i (wx^i + b - y^i)^2$
-        - the $2$ in $\frac{1/2m}$ is for calculation convenience
+    - L2: $L(x, y| w, b) = \frac{1}{2} |\tilde y - y|^2$
+    - Global loss $J(w,b) = \frac{1}{m} \sum_i L(x^i, y^i | w, b)$ (data points are independent to each other)
+    - $min J(w,b) = min_{w,b} \frac{1}{2m} \sum_i (wx^i + b - y^i)^2$
+        - the $2$ in $\frac{1}{2m}$ is for calculation convenience
     - Gradient descent
         - optimization
         - for each sample, compute $\tilde y = wx + b$
@@ -34,7 +34,6 @@ draft: false
 - $\tilde y = w^T x + b, w \in R^{n \times 1}, b \in R$
     - $= \sum_{i=1}^m w_ix_i+b = (w_1, w_2, ..., w_n) \times \begin{bmatrix} x_1 \\ x_2 \\ ... \\ x_n \end{bmatrix} + b$
 - Gradient of vector and metrix
-    - $J(w) = L(x, y|w) = 1/2 (w^Tx-y)^2$
-    - let $Z = w^Tx-y$, $J(w)=1/2Z^2$
+    - $J(w) = L(x, y|w) = \frac{1}{2} (w^Tx-y)^2$
+    - let $Z = w^Tx-y$, $J(w)=\frac{1}{2}Z^2$
     - $\frac{\partial J(w)}{\partial w} = \frac{\partial J}{\partial Z} \frac{\partial Z}{\partial w} = Zx = (w^Tx-y)x$
-    
