@@ -27,10 +27,10 @@ draft: false
         - e.g. Air Cargo Transportation
             - Original problem:
                 - 10 airports, 50 planes, 200 cargos.
-                - Total # of states: $10^50 (planes at airports) x (10+50)^200 (cargos at airports or planes() = 10^405$
+                - Total # of states: $10^50 (planes at airports) × (10+50)^200 (cargos at airports or planes() = 10^405$
             - Relaxed problem:
                 - All cargos are in 5 airports, all cargos in same airport have same destination. => 5 big plands, 5 big cargos
-                - Total # of states: $10^5 x (10+5)^5 = 10^11$
+                - Total # of states: $10^5 × (10+5)^5 = 10^11$
 
 # Hierarchical Planning
 > to manage complexity
@@ -52,7 +52,7 @@ draft: false
 - ![Reachable set](reachable_set.png)
 - Notation:
     - $~$ means possibly
-    - e.g. $\widetilde(+)$ means add / unchange.
+    - e.g. $\overset{\sim}{+}$ means add / unchange.
 - Approximation of effects
     - Optimistic Reachable Set ($REACH+$): may overestimate the actual reachable set
     - Pessimistic Reachable Set ($REACH-$): may underestimate the actual reachable set
