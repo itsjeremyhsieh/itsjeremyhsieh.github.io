@@ -25,7 +25,7 @@ draft: false
 - $F(x)=H(x)-x$
 - $F(x)$ just learn the change (residue)
 - RESNET-34 structure
- ![RESNET-34](RESNET_34.png)
+![RESNET-34](RESNET-34.png)
 > Why use the shortcut?
 - Degrading problem
     - when the model gets deeper, it becomes more difficult for layers to propagate information from shallow layers and information is lost (degrade rapidly)
