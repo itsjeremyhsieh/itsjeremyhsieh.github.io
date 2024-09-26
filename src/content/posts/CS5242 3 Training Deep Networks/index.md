@@ -30,7 +30,7 @@ draft: false
 - AdaGrad: change learning rate according to gradient
 - RMSProp: rescale learning rate to remove effect of gradient size, balance between different directions
     - $S = \beta s + (i- \beta) g^2$, $s$ has history information,   
-      $w = w - \frac {\alpha g}{\sqrt {\hat S + \epsilon}}$, $g$ has current information, $\beta\$ to balance
+      $w = w - \frac {\alpha g}{\sqrt {\hat S + \epsilon}}$, $g$ has current information, $\beta$ to balance
 - Adam: combining momentum and RMSProp
     - $v = \beta_1 v + (1- \beta_1)g$  
       $s = \beta_2 s + (1- \beta_2)g$  
