@@ -20,7 +20,6 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
 
 import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
 import partytown from "@astrojs/partytown";
 
 import sitemap from "@astrojs/sitemap";
