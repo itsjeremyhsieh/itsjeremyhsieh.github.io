@@ -1,7 +1,7 @@
 ---
 title: "[CS5340] Bayesian Network (Directed Graphical Model, DGM)"
 published: 2024-08-19
-description: "#2 Bayesian Network"
+description: "#2 Bayesian Network, 3-Node graph, Bayes ball algorithm, Markov blanket"
 tags: ["NUS", "Uncertainty Modelling in AI"]
 category: CS5340
 draft: false
