@@ -1,7 +1,7 @@
 ---
 title: "[CS5340] Markov Random Field (Undirected Graphical Model, UGM)"
 published: 2024-08-26
-description: "#3"
+description: "#3 Markov Random Field, Undirected graphical model"
 tags: ["NUS", "Uncertainty Modelling in AI"]
 category: CS5340
 draft: false
