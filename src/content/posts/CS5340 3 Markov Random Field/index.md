@@ -16,6 +16,9 @@ $x_a⊥x_c | x_b ⇨ \begin{cases} p(x_a,x_c|x_b)=p(x_a|x_b)p(x_c|x_b) \\ p(x_a|
 ###  R2 Decomposition: $x⊥{A,b} ⇨ x⊥A $ & $x⊥b$
 - *pf*:  
     $X⊥{A,B} ⇨ p(X,A,B) = p(X)p(A,B) \\ p(X,A) = \int p(X,A,B)dB = \int p(X)p(A,B)dB \\ = p(X) \int p(A,B)dB = p(X)p(A)$  
+### R2 Reverse:  $x⊥A $ & $x⊥b$ (DOESN"T hold)
+- *pf*:  
+    XOR Probability Counter-Example
 
 ### R3 Weak Union: $X⊥{A,B} ⇨ X⊥A|B$ & $X⊥B|A$
 - *pf*:
@@ -23,10 +26,21 @@ $x_a⊥x_c | x_b ⇨ \begin{cases} p(x_a,x_c|x_b)=p(x_a|x_b)p(x_c|x_b) \\ p(x_a|
     $X⊥{A,B} ⇨ X⊥B$
     $p(X) = p(X|A,B) = p(X|A)$, 
     similar proof with $p(X|B)$
-
-### R4 Contraction: $X⊥A|B$ and $X⊥B ⇨ X⊥{A,B}$
+ 
+### R3 Reverse: $X⊥A|B$ & $X⊥B|A$ ⇨ $X⊥{A,B}$
 - *pf*:  
-    $X⊥A|B$ and $X⊥B ⇨ p(X|A,B)= p(X|B) = p(X) ⇨ X⊥{A,B}$
+    $X ⊥ A | B \Rightarrow p(x|A,B) = p(x|B)$  
+    $X⊥B|A \Rightarrow p(x|A,B) = p(x|A)$  
+    $p(x) = \int p(x,A)dA = \int p(c|A)p(A)dA = p(x|A) \int p(A)dA = p(x|B)$
+
+### R4 Contraction: $X⊥A|B$ and $X⊥B ⇨ X⊥\{A,B\}$
+- *pf*:  
+    $X⊥A|B$ and $X⊥B ⇨ p(X|\{A,B\}) \\ = p(X|B) = p(X) ⇨ X⊥{A,B}$
+
+### R4 Reverse: $X⊥\{A,B\}$ ⇨  $X⊥A|B$ and $X⊥B$
+- *pf*:  
+    by weak union, $x⊥ \{A,B\}$ ⇨ $x⊥A|B$
+    by decomposition,  $x⊥\{A,B\}$ ⇨ $x⊥B$
 
 ### R5 Intersection: $X⊥Y|{W,Z}$ and $X⊥W|{Y,Z} ⇨ X⊥ {Y,W}|Z$
 - *pf*:
@@ -35,6 +49,12 @@ $x_a⊥x_c | x_b ⇨ \begin{cases} p(x_a,x_c|x_b)=p(x_a|x_b)p(x_c|x_b) \\ p(x_a|
     $p(X|W,Z) = p(X|Y,Z)$  
     $p(X|Z) = \int p(X.W|Z)dW = \int p(X|W,Z)p(W|Z)dW = p(X|Y,Z \int p(W|Z)dW = p(X|Y,Z)$   
     $p(X|W,Y,Z) = p(X|Y,Z) = p(X|Z) ⇨ X⊥{W,Y}|Z$
+
+### R5 Reverse: $X⊥ \{ Y,W\ }|Z$ ⇨ $X⊥Y|{W,Z}$ and $X⊥W|{Y,Z}$
+- *pf*:  
+    $X⊥ \{ Y,W \}|Z \Rightarrow p(x|Z) = p(x|W,Y,Z)$  
+    $X⊥ \{ Y,W \}|Z \Rightarrow x⊥w|Z$ (decomposition)  
+    $p(x|Z) = p(x|W,Y,Z) = p(x|Y,Z) \Rightarrow x⊥W| \{ Y,Z \}$  
 
 # Independence Map (I-Map)
 - $I(p)$ represents all independencies in $p(x_1, ..., x_N)$
