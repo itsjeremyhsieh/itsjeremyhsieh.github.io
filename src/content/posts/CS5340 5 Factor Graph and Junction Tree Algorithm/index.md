@@ -81,9 +81,9 @@ Underflow problem: prodects of $0.x \rightarrow 0$
     - Cluster graph
         - cluster nodes $C_i \subset \{ x_1, ... x_n\}$
         edges between $C_i, C_j\ \Rightarrow $ sepset (intersection) $S_{ij} = C_i \cap C_j$
-    - Family preservation: each potential $𝜓_k$ is assigned to a cluster $C_{\alpha (k)}$ such that $Scope[𝜓k] \subset C_{\alpha (k)}$ 
+    - Family preservation: each potential $𝜓_k$ is assigned to a cluster $C_{\alpha (k)}$ such that $Scope[𝜓_k] \subset C_{\alpha (k)}$ 
     - Cluster potential: $\phi_j (C_j) = \prod_{𝜓: \alpha(𝜓)=j}𝜓$
-        - ensure each $𝜓$ is used once and only once
+        - ensure each $𝜓$ is used **once and only once**
 - Running intersection property
     - for each pair of clusters $C_i, C_j$ and $X \in C_i \cap C_j$, there exists an unique path between $C_i, C_j$ fpr which all clusters and sepset contain $X$
     - a.k.a for any $X$, the set of clusters & sepsets containing $X$ form a tree.
@@ -113,4 +113,3 @@ Underflow problem: prodects of $0.x \rightarrow 0$
     A cluster tree is a junction tree only if it is a maximum spanning tree
     :::
     ![junction tree](final.png) 
-    
