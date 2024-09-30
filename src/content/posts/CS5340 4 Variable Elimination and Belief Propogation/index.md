@@ -28,7 +28,7 @@ Conditioning $\Rightarrow$ Marginalization trick for Notation
 :::
 
 - $g(\bar x_i) = \sum_{x_i} g(x_i) \delta (x_i, \bar x_i)$
-- $\delta (x_E, \bar x_E) = \prod_{i \in E} \delta (x_i, \bar x_i) = \begin{cases} 1, if x_i = \bar x_1 \\ 0, otherwide \end{cases}$
+- $\delta (x_E, \bar x_E) = \prod_{i \in E} \delta (x_i, \bar x_i) = \begin{cases} 1, if x_i = \bar x_1 \\ 0, otherwise \end{cases}$
 
 ## Algorithm of variable elimination
 ![algo](algo.png)
