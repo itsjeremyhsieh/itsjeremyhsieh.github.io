@@ -1,7 +1,7 @@
 ---
 title: "[CS5340] Markov Random Field (Undirected Graphical Model, UGM)"
 published: 2024-08-26
-description: "#3 Markov Random Field, Undirected graphical model"
+description: "#3 Markov Random Field, Undirected graphical model, 5 Rules"
 tags: ["NUS", "Uncertainty Modelling in AI"]
 category: CS5340
 draft: false
@@ -50,7 +50,7 @@ $x_a⊥x_c | x_b ⇨ \begin{cases} p(x_a,x_c|x_b)=p(x_a|x_b)p(x_c|x_b) \\ p(x_a|
     $p(X|Z) = \int p(X.W|Z)dW = \int p(X|W,Z)p(W|Z)dW = p(X|Y,Z \int p(W|Z)dW = p(X|Y,Z)$   
     $p(X|W,Y,Z) = p(X|Y,Z) = p(X|Z) ⇨ X⊥{W,Y}|Z$
 
-### R5 Reverse: $X⊥ \{ Y,W\ }|Z$ ⇨ $X⊥Y|{W,Z}$ and $X⊥W|{Y,Z}$
+### R5 Reverse: $X⊥ \{ Y,W \}|Z$ ⇨ $X⊥Y|{W,Z}$ and $X⊥W|{Y,Z}$
 - *pf*:  
     $X⊥ \{ Y,W \}|Z \Rightarrow p(x|Z) = p(x|W,Y,Z)$  
     $X⊥ \{ Y,W \}|Z \Rightarrow x⊥w|Z$ (decomposition)  
