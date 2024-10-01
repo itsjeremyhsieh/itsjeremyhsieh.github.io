@@ -1,7 +1,7 @@
 ---
 title: "[閱讀筆記] 越寫越強！高效知識筆記煉金術"
 published: 2024-10-02
-description: ""
+description: "為何要做筆記、如何做康乃爾筆記、如何提升學習"
 tags: ["閱讀筆記"]
 category: 閱讀筆記
 draft: false
