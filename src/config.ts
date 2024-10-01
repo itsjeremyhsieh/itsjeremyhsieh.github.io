@@ -48,26 +48,31 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/photo.jpg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-  name: 'Jeremy H.',
+  name: 'Jeremy H',
   bio: '',
   links: [
-    // {
-    //   name: 'Twitter',
-    //   icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
-    //                                     // You will need to install the corresponding icon set if it's not already included
-    //                                     // `pnpm add @iconify-json/<icon-set-name>`
-    //   url: 'https://twitter.com',
-    // },
-    // {
-    //   name: 'Steam',
-    //   icon: 'fa6-brands:steam',
-    //   url: 'https://store.steampowered.com',
-    // },
-    // {
-    //   name: 'GitHub',
-    //   icon: 'fa6-brands:github',
-    //   url: 'https://github.com/saicaca/fuwari',
-    // },
+    {
+      name: 'LinkedIn',
+      icon: 'entypo-social:linkedin',       // Visit https://icones.js.org/ for icon codes
+                                        // You will need to install the corresponding icon set if it's not already included
+                                        // `pnpm add @iconify-json/<icon-set-name>`
+      url: 'https://www.linkedin.com/in/yu-hsuan-hsieh/',
+    },
+    {
+      name: 'YouTube',
+      icon: 'entypo-social:youtube',
+      url: 'https://www.youtube.com/@studywithjeremy7452',
+    },
+    {
+      name: 'Medium',
+      icon: 'entypo-social:medium',
+      url: 'https://medium.com/@itsjeremyhsieh',
+    },
+    {
+      name: 'GitHub',
+      icon: 'fa6-brands:github',
+      url: 'https://github.com/itsjeremyhsieh',
+    },
   ],
 }
 
