@@ -73,6 +73,11 @@ export const profileConfig: ProfileConfig = {
       icon: 'fa6-brands:github',
       url: 'https://github.com/itsjeremyhsieh',
     },
+    {
+      name: 'Portfolio',
+      icon: 'entypo-social:google',
+      url: 'https://sites.google.com/view/yu-hsuan-hsieh/home'
+    },
   ],
 }
 
