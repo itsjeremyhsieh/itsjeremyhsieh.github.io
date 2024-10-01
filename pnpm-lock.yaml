@@ -36,6 +36,9 @@ importers:
       '@fontsource/roboto':
         specifier: ^5.0.14
         version: 5.1.0
+      '@iconify-json/entypo-social':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@swup/astro':
         specifier: ^1.4.1
         version: 1.4.1(@types/babel__core@7.20.5)
@@ -1098,6 +1101,9 @@ packages:
 
   '@fontsource/roboto@5.1.0':
     resolution: {integrity: sha512-cFRRC1s6RqPygeZ8Uw/acwVHqih8Czjt6Q0MwoUoDe9U3m4dH1HmNDRBZyqlMSFwgNAUKgFImncKdmDHyKpwdg==}
+
+  '@iconify-json/entypo-social@1.2.0':
+    resolution: {integrity: sha512-oUuTkWg7n+8eiOXaa+Gks4212Lj0MARL1GN6i2AIyy6bz+jpTPbbmRbSN7CmzgZUylwF2hpBCJ1aK0FNjBhH8Q==}
 
   '@iconify-json/fa6-brands@1.2.0':
     resolution: {integrity: sha512-2f5AeUbufKeU/JY+cbX6dOsPaQO1WwfShfoxwRd5VRF3Lr1jGM8CfXLFhb8bonAqbue1oBPwmjHUfaCafAfo2A==}
@@ -5936,6 +5942,10 @@ snapshots:
   '@fontsource-variable/jetbrains-mono@5.1.0': {}
 
   '@fontsource/roboto@5.1.0': {}
+
+  '@iconify-json/entypo-social@1.2.0':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify-json/fa6-brands@1.2.0':
     dependencies:
