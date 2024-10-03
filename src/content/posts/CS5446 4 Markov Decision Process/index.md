@@ -1,7 +1,7 @@
 ---
 title: "[CS5446] Markov Decision Process"
 published: 2024-09-04
-description: "#4 Markov Decision Process"
+description: "#4 Markov Decision Process, Value evaluation, Policy evaluation, Online sesarch, Monte Carlo tree search"
 tags: ["NUS", "AI Planning"]
 category: CS5446
 draft: false
@@ -68,7 +68,7 @@ draft: false
 
 # Online Algorithms
 > Decision-time planning
-- for large problems, state space increase exponentially
+- for **large** problems, state space increase exponentially
 - we can use Online search with sampling
     - real time dynamic programming
     - Monte Carlo Tree Search

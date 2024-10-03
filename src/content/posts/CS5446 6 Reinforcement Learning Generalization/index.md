@@ -67,7 +67,7 @@ Approximate MC / TD are similat to MC / TD but is calculated for each parametere
 Policy search estimates the policy function, but only care if it leads to optimal policy, doesn't care whether the estimation is close to true utility.
 :::
 
-1. REINFORCE
+1. **REINFORCE**
 - Monte-Carlo policy gradient
 - high variance => use baseline (center the return)
 - Advantage function $A_{\pi_ɵ}(s,a) = \hat{Q}_ɵ(s,a) - \hat{U}_{\pi_ɵ}(s)$, where $\hat{U}_{\pi_ɵ}(s)$ is the baseline
@@ -77,24 +77,32 @@ Policy search estimates the policy function, but only care if it leads to optima
 - wants to restrict the update
 - Solution: Minorize Maximization
     - use a simpler objective (is the lower bound of the true one) to replace the true one.
-        - $g(ɵ|ɵ^t) ≤ f(ɵ)$
+        - $g(\theta|\theta^t) ≤ f(\theta)$
     - maximize the simpler objective
     -guarantee monotonic policy improvement
 
-2. Trust Region Policy Optimization (TRPO)
-- uses lower bound
-- maximiza KL diverge to ≤ 𝛿
+2. **Trust Region Policy Optimization (TRPO)**
+- uses lower bound (**KL divergence**) to limit the change per update, to ensure that the update is gradual and stable, moving toward the optimal action
+- maximize KL diverge to ≤ 𝛿
+![TRPO](Notes_241003_174757_c26.jpg)
 
-3. Proximal Policy Optimization (PPO)
-- TRPO is too complex
+3. **Proximal Policy Optimization (PPO)**
+- TRPO is too computationally complex
 - uses clipped objective to limit updates
+- $\frac{\pi_\theta (a|S)}{\pi_{\theta_{old}} (a|S)}$ must be in the range of $[1- \epsilon, 1 + \epsilon]$
+    - if $< 1- \epsilon$, then clip to $1- \epsilon$
+    - if $> 1+ \epsilon$, then clip to $1+ \epsilon$
+![PPO](Notes_241003_174948_425.jpg)
 
 # Value-function approximation + Policy search
-1. Actor-Critic methods
-- Learn a policy (actor) that takes action
-- Also learn an utility function (critic) for evaluating the actor's decisions
+1. **Actor-Critic methods**
+- Learns a policy (actor) that takes action
+- Also learns an utility function (critic) for evaluating the actor's decisions
 - The **actor** is running **policy search**
 - The **critic** is running **value-function approximation**
-- Actor adjusts policy based on feedback from critic
-
+- Actor adjusts policy based on feedback from critic (using **policy gradient**)
+- The **advantage estimate** shows how much the currect pollicy is better than the average.
+    - $A(s,a) = R + \gamma V(s') - V(s)$
+- The policy gradient update is $E(A(s,a) \nabla_\theta ln \pi_\theta(a,s)$
+![Actor-Critic](Notes_241003_175337_3aa.jpg)
 
