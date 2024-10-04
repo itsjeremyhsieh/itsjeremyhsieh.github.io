@@ -8,8 +8,8 @@ draft: false
 ---
 
 # Limitations of RNN & LSTM
-> Why use self attention
-- poor sequence parallelism
+> Why use self attention?
+- poor sequence **parallelism**
     - LSTM relies on a sequential computation process, difficult to achieve sequence parallelism
 - difficulty handling long-distance dependencies
     - LSTM struggles with captureing **long-range** dependencies as sequences grow longer
