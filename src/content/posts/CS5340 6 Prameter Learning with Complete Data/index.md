@@ -1,5 +1,5 @@
 ---
-title: "[CS5340] Parameter Learning with COmplete Data"
+title: "[CS5340] Parameter Learning with Complete Data"
 published: 2024-09-16
 description: "#6 MLE, MAP, stochastic maximum likelihood, iterative proportional fitting, stochastic gradient descent"
 tags: ["NUS", "Uncertainty Modelling in AI"]
@@ -7,7 +7,7 @@ category: CS5340
 draft: false
 ---
 
-- Goal: How to get unknown parameter $\theta$ of $p(x_1, ...x_M | \theta)$ from *fully observed* data ($x_1, ... ,x_M$ are observed (known))?
+- Goal: How to get unknown parameter $\theta$ of $p(x_1, ..., x_M | \theta)$ from *fully observed* data ($x_1, ... ,x_M$ are observed (known))?
 
 - Given: a set of $N$ *independent and identically distributed* (i.i.d) complete observation of each random variable $X: \{ x_{1,1}, ... x_{1,N}, ...x_{M,1}, ..., x_{M,N}\}$
     - $M$ random variables, each observe $N$ times
