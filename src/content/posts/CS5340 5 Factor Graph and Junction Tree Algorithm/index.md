@@ -1,6 +1,6 @@
 ---
 title: "[CS5340] Factor Graph & Junction Tree Algorithm"
-published: 2024-09-12
+published: 2024-09-09
 description: "#5 Factor graph, Sum-Product algo, Maximum a Posterior problem, Junction tree"
 tags: ["NUS", "Uncertainty Modelling in AI"]
 category: CS5340

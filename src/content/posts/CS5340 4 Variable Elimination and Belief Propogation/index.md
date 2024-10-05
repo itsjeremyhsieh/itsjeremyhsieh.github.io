@@ -1,6 +1,6 @@
 ---
 title: "[CS5340] Variable Elimination & Belief Propogation (Sum-Product Algorithm)"
-published: 2024-09-05
+published: 2024-09-02
 description: "#4 Naive variable elimination algorithm, Treewidth, Sum-Product Algorithm, Message passing protocol"
 tags: ["NUS", "Uncertainty Modelling in AI"]
 category: CS5340
