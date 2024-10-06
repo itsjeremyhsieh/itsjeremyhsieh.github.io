@@ -21,20 +21,23 @@ draft: false
         - $Action(Fly(p, from, to))$
             Precond: $At(p, from) ∧ Plane(p) ∧ Airport(from) ∧ Airport(to)$
             Effect: $¬At(p, from) ∧ At(p, to)$
-    - grounded action / instantiation: action schema with variables
+    - grounded action / instantiation: action schema with variables （實例化的動作）
         - e.g. $Action(Fly (P_1, SFO, SIN))$
+- Closed-world assumption: any fluents that are **not mentioned** are **FALSE**.
 - After performing an action: 
     $$S' = (S - DEL(a)) ∪ ADD(a)$$
     where $DEL(a)$ is the delete list (neg) of action $a$, $ADD(a)$ is the add list (pos) of action $a$.
 - The frame problem: to only specify what changed, anything unmentioned is unchanged.
     - Precond at $t$
     - Effect at $t+1$
+- Example: Air Cargo
+![example](example.png)
 
 :::note
-Goal is a description (partial info), not a state (full info).
+Goal is a description (contains only partial info), not a state (full info).
 :::
 
-## Planning Algorithms
+## Classical Planning Algorithms
 ### 1. Forward Search (Progression)
 - Search path from initial state to goal state.
 - $$S' = (S - DEL(a)) ∪ ADD(a)$$
@@ -43,10 +46,17 @@ Goal is a description (partial info), not a state (full info).
 - Search path from goal state to initial state
 - $$POS(g') = (POS(g) - ADD(a)) ∪ POS(Precond(a))$$   
     $$NEG(g') = (NEG(g) - DEL(a)) ∪ (NEG(Precond(a)))$$
-
+- **Relevant action**: action that can lead to the goal. (effect can achieve thegoal)
 ### 3. Boolean Satisfiability (SAT) Problem
 - Turn classical planning problem into a prepositional formula and check if it is satisfiable (can be true)
 - SAT is a NP-complete problem
+
+:::note
+State vs. Description:
+- description represents a set of states (a part of states)
+- state can have 2 possibilities: True / False
+- description can have 3 possibilities: True/ False/ not mentioned
+:::
 
 ### Planning algorithms must be 
 1. **Soundness**: plans generated are valid
