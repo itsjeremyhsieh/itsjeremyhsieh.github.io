@@ -6,6 +6,6 @@ tags: ["NUS", "AI Planning"]
 category: CS5446
 draft: false
 ---
-# W1 ~ W6 Mindmap
+# W1 ~ W7 Mindmap
 
 ![mindmap](mindmap.png)
