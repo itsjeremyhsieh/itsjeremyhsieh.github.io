@@ -31,14 +31,13 @@ draft: false
     - i.e ADP
     - cannot scale
 2. **Linear Model**
-    - represent tranition & reward function
-    - as linear model
+    - represent tranition & reward function as linear model
 3. **Nearual Networks Model**
     - i.e VAE
 - Problem
     - learning transition function may be difficult
         - too many factors
-    - Sol. Value Equivalence Principle
+    - Sol: Value Equivalence Principle
         - Two models are value equivalent if they yielf the *same Bellman updates*
         - learn latent mapping function $h: s \rightarrow z$  
             learn latent transition * reward function $g: z, a \rightarrow z', r$
