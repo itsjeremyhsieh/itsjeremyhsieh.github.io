@@ -47,15 +47,15 @@ draft: false
 
 # Model based techniques
 - Goal: find optimal policy/ value using the model and/or the environment
-1. Direct model solving
+1. **Direct model solving**
     - solve using MDP solvers
         - i.e. value/ policy iteration
     - uses the model fully
     - **ADP**: learn a model and solve the bellman equation of the learned model
     - **Value iteration network**: value iteration + NN
-2. Sample-based planning
+2. **Sample-based planning**
     - use the model ONLY to generate samples
-    - dont consider the pobability distribution of the model
+    - dont consider the probability distribution of the model
         - $s' \sim P_\eta (s' | s,a)$  
           $r = R_\eta (s,a,s')$
     - apply model-free RL on samples
@@ -64,18 +64,18 @@ draft: false
             - but too time consuming
             - Sol: plan for states that are relevant for NOW (planning for surrounding)
             ![Q-learning](<SmartSelect_20241004_131510_Samsung Notes.jpg>)
-3. Model-based Data Generation
+3. **Model-based Data Generation**
     - consider both
         - real experience from environment
         - simulated experience from model
     - train model free RL with both experience
-    - i.e **Dyna-Q**
+    - i.e Dyna-Q
         ![Dyna-Q](<SmartSelect_20241004_125639_Samsung Notes.jpg>)
 # Frontiers
 - **General Value Function (GVF)**
     - generalize value function to predict any signals
     ![GVF](<SmartSelect_20241004_125451_Samsung Notes.jpg>)
-- Temporal Abstractions via **Options**
+- **Temporal Abstractions** via **Options**
     - hierarchical RL
     - option $O = (I, \pi, \beta)$
         - $I \subseteq s$ (state)
