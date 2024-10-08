@@ -45,25 +45,26 @@ draft: false
 
 ## Utility of States
 - reward of executing $π^*(s)$
-- Bellman Equation: $U(s) = U^{π^*}(s) = max_{a} \sum_{s'} P(s'|s,a)[R(s,a,s') + γU(s')] = V(s)$
+- **Bellman Equation**: $U(s) = U^{π^*}(s) = max_{a} \sum_{s'} P(s'|s,a)[R(s,a,s') + γU(s')] = V(s)$
 - Optimal policy $π^*$ is the policy that maximizes $U(s)$: $π^*(s) = argmax_{a} \sum_{s'} P(s'|s,a)[R(s,a,s') + γU(s')]$
 - **Q-Function** $Q(s,a)$: expected utility of taking a given action in a given state
     - $U(s) = max_a Q(s,a)$
 
 # Value Iteration
-- repeatedly perform Bellman Update
-    - $U_{i+1}(s) ← max_a \sum_{s'} P(s'|s,a) [R(s,a,s') + γU_i(s')]$
+- repeatedly perform **Bellman Update**
+    - $U_{i+1}(s) ← max_a \sum_{s'} P(s'|s,a) [R(s,a,s') + \gamma U_i(s')]$ or
+    - $U_{i+1}(s) \leftarrow R(s) + \gamma max_{a \in A(s)} \sum_{s'} P(s'|s,a) U_i(s')$
 - to find rewarding value for each state
-- initialize as 0, iterate until convergence
+- initialize as $0$, iterate until convergence
 
 # Policy Iteration
 - Begin with initial policy $π_0$
-- Repeat until converge:
-    1. **Policy evaluation**: uses the given policy to calculate the utility of each state
+- Repeat until no change in Utility for each state:
+    1. **Policy evaluation**: uses the given policy to calculate the **utility of each state**
     2. **Policy improvement**: 
-        - find the best action for $π_i$ via one-step lookahead based on $U_i$
+        - find the best action for $π_i$ via one-step lookahead based on $U_i$ obtained from policy evaluation step
         - $π_{i+1}(s) = argmax_a \sum_{s'} P(s'|s,a)[R(s,a,s') + γU_{π_k}(s')]$
-- Complexity: $S = n$ linear equations with $n$ unknowns $\rightarrow$ **$O(n^3)$** 
+- Complexity: $S = n$ linear equations with $n$ unknowns $\Rightarrow$ **$O(n^3)$** 
 - Policy iteration may be faster than value iteration.
 
 # Online Algorithms
@@ -88,11 +89,11 @@ draft: false
         - $π_{UCT}(n) = argmax_{a}(\hat{Q}(n,a) + c \sqrt{\frac {N(n)}{N(n,a)}}$
             - $\hat{q}(n,a)$ is the average return of all trials (exploitation)
             - $c$: constant balancing exploitation & exploration
-            - $N(n)$: # trials through node $n$
-            - $N(n,a)$: $ trials through node $n$ starting with $a$
+            - $N(n)$: # of trials through node $n$
+            - $N(n,a)$: # of trials through node $n$ starting with $a$
         - 也等於 $π_{UCT}(n) = \frac {U(n)}{N(n)} + C \sqrt{\frac {log N(Parent(n))}{N(n)}}$ 
-            - $N(Parent(n))$: the # parent node been visited
-            - $N(n)$: the # node $n$ been visited.
+            - $N(Parent(n))$: the # of parent node been visited
+            - $N(n)$: the # of node $n$ been visited.
             - $\frac {U(n)}{N(n)}$: 贏的次數 / 嘗試的次數
             - $\sqrt{\frac {log N(Parent(n))}{N(n)}}$: 開根號 $log$總次數 / 嘗試的次數
 - Expansion: one or more nodes created
