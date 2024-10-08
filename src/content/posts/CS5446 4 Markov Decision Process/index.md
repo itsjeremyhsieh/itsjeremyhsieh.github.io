@@ -16,7 +16,7 @@ draft: false
     - states $S$
     - actions $A$
     - Transition function $T$: $S, A, S' \rightarrow [0, 1]$
-        -satisfies the Markov property s.t $\sum_{s'} T(s,a,s') = \sum_{s} P(s'|s,a) = 1$. (Sums to 1)
+        - satisfies the Markov property s.t $\sum_{s'} T(s,a,s') = \sum_{s} P(s'|s,a) = 1$. (Sums to 1)
     - Reward function $R$
     - discount facrot $0 ≤ γ ≤ 1$
     - solution is a policy: a function that recommend an action in each state
@@ -24,8 +24,8 @@ draft: false
     - $P(s_{t+1}|s_t, a_t, s_{t-1}, a_{t-1}, ..., s_0, a_0) = P(s_{t+1}|s_t, a_t)$
     - Markov property simplifies real-world problems
 - Reward funciton $R(s,a,s')$: need to balance between risk & reward
-- Policy $π: S -> A$: for every state
-    - quality of $π$: expected utility of sequence guaranteed by policy $π$
+- Policy $π: S \rightarrow A$: for every state, map an action
+    - Quality of $π$: expected utility of sequence guaranteed by performing policy $π$
     - Optimal policy $π^*$: highest expected utility
 
 ## Finite horizon:
@@ -38,7 +38,7 @@ draft: false
 - **Stationary** $π^*$
 - But *R* may be infinite, hard to compare policies.
     1. use discount factor $γ < 1$, utility becomes finite
-        - $U_h([S_0, a_0, s_1, a_1,s_2, ...]) ≤ R_{max}/(1-γ)$
+        - $U_h([S_0, a_0, s_1, a_1,s_2, ...]) ≤ \frac {R_{max}} {1-γ}$
     2. Environment has terminal states, and policy guaranteed to get to a terminal state.
     3. Compute average rewards obtained per time stop
         - hard to compute and analyze
@@ -63,7 +63,7 @@ draft: false
     2. **Policy improvement**: 
         - find the best action for $π_i$ via one-step lookahead based on $U_i$
         - $π_{i+1}(s) = argmax_a \sum_{s'} P(s'|s,a)[R(s,a,s') + γU_{π_k}(s')]$
-- Complexity: $S = n$ linear equations with $n$ unknowns -> **$O(n^3)$** 
+- Complexity: $S = n$ linear equations with $n$ unknowns $\rightarrow$ **$O(n^3)$** 
 - Policy iteration may be faster than value iteration.
 
 # Online Algorithms
@@ -90,7 +90,7 @@ draft: false
             - $c$: constant balancing exploitation & exploration
             - $N(n)$: # trials through node $n$
             - $N(n,a)$: $ trials through node $n$ starting with $a$
-        - $UCB(n) = \frac {U(n)}{N(n)} + C \sqrt{\frac {log N(Parent(n))}{N(n)}}$ 
+        - 也等於 $π_{UCT}(n) = \frac {U(n)}{N(n)} + C \sqrt{\frac {log N(Parent(n))}{N(n)}}$ 
             - $N(Parent(n))$: the # parent node been visited
             - $N(n)$: the # node $n$ been visited.
             - $\frac {U(n)}{N(n)}$: 贏的次數 / 嘗試的次數

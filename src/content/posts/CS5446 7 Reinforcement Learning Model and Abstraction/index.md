@@ -18,7 +18,7 @@ draft: false
 ## Model
 - $(S, A, T, R, \gamma)$ parameterizad by $\eta$: $M_{\eta}$
 - state & action are known
-- find transition & reward function
+- find transition & reward function (unknown)
 - model learning to create model
 
 # Model Learning
@@ -36,11 +36,11 @@ draft: false
     - i.e VAE
 - Problem
     - learning transition function may be difficult
-        - too many factors
-    - Sol: Value Equivalence Principle
+        - too many factors to learn from the environment
+    - Sol: **Value Equivalence Principle**
         - Two models are value equivalent if they yielf the *same Bellman updates*
         - learn latent mapping function $h: s \rightarrow z$  
-            learn latent transition * reward function $g: z, a \rightarrow z', r$
+            learn latent transition & reward function $g: z, a \rightarrow z', r$
 
 > Now that we have a model, how can we use it?
 

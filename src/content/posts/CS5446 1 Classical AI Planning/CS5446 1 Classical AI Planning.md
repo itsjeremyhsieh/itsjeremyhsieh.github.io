@@ -40,7 +40,7 @@ Goal is a description (contains only partial info), not a state (full info).
 ## Classical Planning Algorithms
 ### 1. Forward Search (Progression)
 - Search path from initial state to goal state.
-- $$S' = (S - DEL(a)) ∪ ADD(a)$$
+- $S' = (S - DEL(a)) ∪ ADD(a)$
 
 ### 2. Backward Search (Regression)
 - Search path from goal state to initial state

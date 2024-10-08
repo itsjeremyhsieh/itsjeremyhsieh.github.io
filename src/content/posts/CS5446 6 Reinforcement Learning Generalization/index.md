@@ -17,26 +17,26 @@ Two solutions:
 
 # Function Approximation
 - compact representation of true utility function
-- $\hat{U}_ɵ = ɵ_1f_1(s) + ɵ_2f_2(s) + ... + ɵ_nf_n(s)$
+- $\hat{U}_\theta = \theta_1f_1(s) + \theta_2f_2(s) + ... + \theta_nf_n(s)$
     - input: states
     - output: utility value
 - better generalization
 
 ## Linear Function Function Approximation
 - Use Linear function to approximate $U$
-- $\hat{U}(s) = ɵ_0 + ɵ_1S_0 + ɵ_2S_1 + ... + ɵ_nS_n$
+- $\hat{U}(s) = \theta_0 + \theta_1S_0 + \theta_2S_1 + ... + \theta_nS_n$
 
 1. Approximate Monte Carlo Learning
 - Supervised learning
 - update parameters ater each trial
-- L2 loss: $1/2 (\hat{U}_ɵ(s)- u_j(s))^2$
-- Update:  $ɵ_i ← ɵ_i + ɑ (u_j(s) - \hat{U}_ɵ(s)) \frac{\partial \hat{U}_ɵ(s)}{\partial ɵ_i}$
+- L2 loss: $\frac {1}{2} (\hat{U}_\theta(s)- u_j(s))^2$
+- Update:  $\theta_i ← \theta_i + ɑ (u_j(s) - \hat{U}_\theta(s)) \frac{\partial \hat{U}_\theta(s)}{\partial \theta_i}$
     - for each parameter
 
 2. Approximate Temporal Difference Learning
 - aka semi-gradient
-- Utility: $ɵ_i ← ɵ_i + ɑ [R(s,a,s') + γ \hat{U}_ɵ(s') - ]\hat{U}_ɵ(s)$
-- Q-Learning: $ɵ_i ← ɵ_i + ɑ [R(s,a,s') + γ max_{a'} \hat{Q}_ɵ(s', a')] - \hat{U}_ɵ(s,a)$
+- Utility: $\theta_i ← \theta_i + ɑ [R(s,a,s') + γ \hat{U}_\theta(s') - ]\hat{U}_\theta(s)$
+- Q-Learning: $\theta_i ← \theta_i + ɑ [R(s,a,s') + γ max_{a'} \hat{Q}_\theta(s', a')] - \hat{U}_\theta(s,a)$
 
 :::note
 Approximate MC / TD are similat to MC / TD but is calculated for each parameteres, multiply by its gradient.
@@ -54,13 +54,13 @@ Approximate MC / TD are similat to MC / TD but is calculated for each parametere
 - experience replay + fixed target
 
 # Policy Search
-- $\pi: S → A$ (find good policy)
-- $\pi_ɵ(s) = argmax_a \hat{Q}_ɵ(s,a)$
+- $\pi: S \rightarrow A$ (find good policy)
+- $\pi_\theta(s) = argmax_a \hat{Q}_\theta(s,a)$
 - Problem:
-    - $\hat{\pi}_ɵ(s,a) = 1 $ if max, elso 0.
+    - $\hat{\pi}_\theta(s,a) = 1 $ if max, else $0$.
     - discrete, cannot use gradient
     - Solution: Stochastic Policy (probability)
-        - Use Softmax function => differentiable
+        - Use Softmax function $\Rightarrow$ differentiable
         - use gradient descend to update
 
 :::note
@@ -70,16 +70,16 @@ Policy search estimates the policy function, but only care if it leads to optima
 1. **REINFORCE**
 - Monte-Carlo policy gradient
 - high variance => use baseline (center the return)
-- Advantage function $A_{\pi_ɵ}(s,a) = \hat{Q}_ɵ(s,a) - \hat{U}_{\pi_ɵ}(s)$, where $\hat{U}_{\pi_ɵ}(s)$ is the baseline
+- Advantage function $A_{\pi_\theta}(s,a) = \hat{Q}_\theta(s,a) - \hat{U}_{\pi_\theta}(s)$, where $\hat{U}_{\pi_\theta}(s)$ is the baseline
 
 ### Problem of policy gradient
-- unstable returns => bad updated => FAIL!
+- unstable returns $\Rightarrow$ bad updated $\Rightarrow$ FAIL!
 - wants to restrict the update
-- Solution: Minorize Maximization
-    - use a simpler objective (is the lower bound of the true one) to replace the true one.
+- Solution: **Minorize Maximization**
+    - use a **simpler objective** (is the lower bound of the true one) to replace the true one.
         - $g(\theta|\theta^t) ≤ f(\theta)$
     - maximize the simpler objective
-    -guarantee monotonic policy improvement
+    - guarantee monotonic policy improvement
 
 2. **Trust Region Policy Optimization (TRPO)**
 - uses lower bound (**KL divergence**) to limit the change per update, to ensure that the update is gradual and stable, moving toward the optimal action
@@ -92,6 +92,7 @@ Policy search estimates the policy function, but only care if it leads to optima
 - $\frac{\pi_\theta (a|S)}{\pi_{\theta_{old}} (a|S)}$ must be in the range of $[1- \epsilon, 1 + \epsilon]$
     - if $< 1 - \epsilon$, then clip to $1- \epsilon$
     - if $> 1 + \epsilon$, then clip to $1+ \epsilon$
+    - 限制update的幅度介於 $[1+\epsilon, 1-\epsilon]$之間
 ![PPO](<SmartSelect_20241008_175613_Samsung Notes.jpg>)
 
 # Value-function approximation + Policy search

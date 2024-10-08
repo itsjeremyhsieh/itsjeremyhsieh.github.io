@@ -18,8 +18,8 @@ draft: false
 - environment: episodic, non-deterministic, partially observable
 - try to maximize gain
 - Decision Model:
-    - Actions: $a ∈ A$
-    - States: $s ∈ S$ with probability of reaching: $P(s)$
+    - Actions: $a \in A$
+    - States: $s \in S$ with probability of reaching: $P(s)$
     - Transition model: $P(s'|s, a)$ probability that action $a$ in state $s$ reaches state $s'$
     - Result: $Result(a)$ 
     - Probability of outcome state $s'$: $P(Result(a) = s') = \sum_{s} P(s)P(s'|s,a)$
@@ -58,7 +58,8 @@ $U'(s) = aU(s) + b$ with $a > 0$
 
 1. Probability equivalent
     - set $u_{\perp} = 0; u_{\tau} = 1$
-    - find $p$ s.t $U(s) ∼ [p, u_{\tau} ; 1-p, u_{\perp}]$ => $U(s) = p$
+    - find $p$ s.t $U(s) ∼ [p, u_{\tau} ; 1-p, u_{\perp}] \Rightarrow U(s) = p$
+    - 最好的設成1，最差的設成0，如果選擇$s$的機率等於選擇$[p$機率是最好的，$(1-p)$機率是最差的$]$，那麼選擇$s$的utility是$p$, $U(s) = p$
 2. Certainty Equivalent (CE)
     - how much $ the lottery is equivalent to in your mind.
     - $U(CE) = EU(Lottery)$
@@ -66,8 +67,8 @@ $U'(s) = aU(s) + b$ with $a > 0$
 ## Expected Monetary Value (EMV)
 - use money as decision objective
 - doesn't take into account risk attitude
-- e.g. Win 1 million so far. A lottery: 50% loss all, 50% add 1.5 million. Play?
-    => $[0.5, 0; 0.5, 2.5] = 1.25 > 1$, Play!
+- e.g. Win 1 million so far. A lottery: 50% loss all, 50% add 1.5 million. Play?  
+    $\Rightarrow [0.5, 0; 0.5, 2.5] = 1.25 > 1$, Play!
 ## Risk Attitude and Risk Premium
 - Risk_premium = **EMV - CE**
     - how much money are you willing to buy the lottery?

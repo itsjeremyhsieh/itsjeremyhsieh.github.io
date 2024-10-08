@@ -35,8 +35,8 @@ draft: false
     - Count outcomes of each state, action
     - Normalize to estimate $P(s'|s,a)$
 - e.g ![ADP example](ADP.png)
-    - $𝑃(𝑠′=(3,2)|𝑠 = (3,3), 𝑎 = 𝑅𝑖𝑔ℎ𝑡) = 1/3$
-    - $𝑃(𝑠′=(4,3)|𝑠 = (3,3), 𝑎 = 𝑅𝑖𝑔ℎ𝑡) = 2/3$
+    - $𝑃(𝑠′=(3,2)|𝑠 = (3,3), 𝑎 = 𝑅𝑖𝑔ℎ𝑡) = \frac {1}{3}$
+    - $𝑃(𝑠′=(4,3)|𝑠 = (3,3), 𝑎 = 𝑅𝑖𝑔ℎ𝑡) = \frac {2}{3}$
 - Now we have the transition functions, we can obtain rewards for each $(s, a)$ with given policy $\pi$
     - $U^{\pi}(s) = \sum_{s'} P(s'|s, \pi(s))[R(s, \pi(s),s') + γU^{\pi}(s')]$
     - Learn reward function $R(s,a,s')$ upon entering state $s'$
@@ -109,6 +109,7 @@ draft: false
     #### SARSA (State-Action-Reward-State-Action)
     - Uses TD for prediction, ε-greedy for action selection
     - $Q(s,a) ← Q(s,a) + α(R(s,a,s') + γQ(s',a')-Q(s,a))$
+    - on-policy
     - Waits until an action is taken, then update Q function
 
 ## Comparison
