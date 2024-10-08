@@ -68,8 +68,8 @@ $U'(s) = aU(s) + b$ with $a > 0$
 - doesn't take into account risk attitude
 - e.g. Win 1 million so far. A lottery: 50% loss all, 50% add 1.5 million. Play?
     => $[0.5, 0; 0.5, 2.5] = 1.25 > 1$, Play!
-## Risk Attitude and risk premium
-- Risk_premium = EMV - CE
+## Risk Attitude and Risk Premium
+- Risk_premium = **EMV - CE**
     - how much money are you willing to buy the lottery?
 - Risk-averse: $EMV > CE$, $RiskPremium > 0$ (不想吃虧)
 - Risk-seeking: $EMV < CE$, $RiskPremium < 0$ (賭下去就對了)

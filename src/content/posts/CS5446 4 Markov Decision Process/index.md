@@ -80,19 +80,21 @@ draft: false
     - tree size: $A^D k^D$
     - but still exponential with search depth
 
-## Monte Carlo Tree Saerch
+## Monte Carlo Tree Search
 > Online search with simulation
 - ![Monte Carlo](MC.png)
 - Selection: select the leave nodes to expand
     - Selection policy: Upper Confidence Bounds applied to Trees(UCT)
-        - $π_{UCT}(n) = argmax_{a}(\hat{q}(n,a) + c \sqrt(N(n)/N(n,a)))$
+        - $π_{UCT}(n) = argmax_{a}(\hat{Q}(n,a) + c \sqrt{\frac {N(n)}{N(n,a)}}$
             - $\hat{q}(n,a)$ is the average return of all trials (exploitation)
             - $c$: constant balancing exploitation & exploration
             - $N(n)$: # trials through node $n$
             - $N(n,a)$: $ trials through node $n$ starting with $a$
-        - $UCB(n) = U(n)/N(n) + C \sqrt(log N(Parent(n))/N(n))$
+        - $UCB(n) = \frac {U(n)}{N(n)} + C \sqrt{\frac {log N(Parent(n))}{N(n)}}$ 
             - $N(Parent(n))$: the # parent node been visited
             - $N(n)$: the # node $n$ been visited.
+            - $\frac {U(n)}{N(n)}$: 贏的次數 / 嘗試的次數
+            - $\sqrt{\frac {log N(Parent(n))}{N(n)}}$: 開根號 $log$總次數 / 嘗試的次數
 - Expansion: one or more nodes created
 - Simulation: estimate the value of the node by completing one simulation run (run to leaf)
 - Backup: update the result back to root.
