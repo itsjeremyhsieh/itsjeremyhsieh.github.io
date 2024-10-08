@@ -90,9 +90,9 @@ Policy search estimates the policy function, but only care if it leads to optima
 - TRPO is too computationally complex
 - uses clipped objective to limit updates
 - $\frac{\pi_\theta (a|S)}{\pi_{\theta_{old}} (a|S)}$ must be in the range of $[1- \epsilon, 1 + \epsilon]$
-    - if $< 1- \epsilon$, then clip to $1- \epsilon$
-    - if $> 1+ \epsilon$, then clip to $1+ \epsilon$
-![PPO](Notes_241003_174948_425.jpg)
+    - if $< 1 - \epsilon$, then clip to $1- \epsilon$
+    - if $> 1 + \epsilon$, then clip to $1+ \epsilon$
+![PPO](<SmartSelect_20241008_175613_Samsung Notes.jpg>)
 
 # Value-function approximation + Policy search
 1. **Actor-Critic methods**

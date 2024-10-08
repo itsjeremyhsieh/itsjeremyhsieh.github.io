@@ -11,7 +11,7 @@ draft: false
 ![Reinforcement Learning](RL.png)
 - Learning to behave in unfamiliar environment
 - Environment is a Markov Decision Process
-    - relies on Markov Property (but doesn't know that it looks like)
+    - relies on Markov Property (but doesn't know what it looks like)
 - Unknown transition function, unknown reward function
 - Use observed rewards to learn optimal policy
 
@@ -54,8 +54,8 @@ draft: false
             - Expected reward of (1,1) = 0.72
             - Expected reward of (1,2) = 0.76, 0.84
         - Overall (average),
-            - $U^{\pi}(1,1) = (0.72+0.72-1.24)/3 = -0.067$
-            - $U^{\pi}(1,2) = (0.76+0.84+0.76)/3 = 0.79$
+            - $U^{\pi}(1,1) = \frac {0.72+0.72-1.24}{3} = -0.067$
+            - $U^{\pi}(1,2) = \frac {0.76+0.84+0.76}{3} = 0.79$
     - Different variences: first visit vs. every visit (of a trial)
     - Slow convergence
         - Learning starts only **at the end of each trial (episode)**
@@ -84,7 +84,7 @@ draft: false
 - **ε-greedy** exploration
     - choose greedy action with $p=(1-ε)$
     - choose exploit (random) action with $p=ε$
-    - lower ε over time $ε = 1/t$, eventually becomes greedy (takes the optimal action)
+    - lower ε over time $ε = \frac {1}{t}$, eventually becomes greedy (takes the optimal action)
 
 ### **Model-free** Active RL
 > Directly learn $\pi^*$

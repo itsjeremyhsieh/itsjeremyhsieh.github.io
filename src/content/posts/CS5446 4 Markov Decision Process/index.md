@@ -15,7 +15,7 @@ draft: false
 - MDP $M ≜ (S, A, T, R, γ)$
     - states $S$
     - actions $A$
-    - Transition function $T$: $S, A, S' -> [0, 1]$
+    - Transition function $T$: $S, A, S' \rightarrow [0, 1]$
         -satisfies the Markov property s.t $\sum_{s'} T(s,a,s') = \sum_{s} P(s'|s,a) = 1$. (Sums to 1)
     - Reward function $R$
     - discount facrot $0 ≤ γ ≤ 1$
@@ -31,7 +31,7 @@ draft: false
 ## Finite horizon:
 - fixed time $N$, then terminate
 - Reward: sums up to $R_n$
-- optimal action may change over time => **Nonstationary** $π^*$
+- optimal action may change over time $\Rightarrow$ **Nonstationary** $π^*$
 
 ## Infinite horizon:
 - no fixed deadline, may run forever
