@@ -49,16 +49,16 @@ draft: false
 1. **Direct model solving**
     - solve using MDP solvers
         - i.e. value/ policy iteration
-    - uses the model fully
+    - uses the model fully (use as if it were the environment)
     - **ADP**: learn a model and solve the bellman equation of the learned model
     - **Value iteration network**: value iteration + NN
 2. **Sample-based planning**
     - use the model ONLY to generate samples
-    - dont consider the probability distribution of the model
+    - don't consider the probability distribution of the model
         - $s' \sim P_\eta (s' | s,a)$  
           $r = R_\eta (s,a,s')$
-    - apply model-free RL on samples
-        - Monte Carlo
+    - apply **model-free** RL on samples
+        - Monte Carlo control
         - Q-Learning
             - but too time consuming
             - Sol: plan for states that are relevant for NOW (planning for surrounding)
@@ -68,8 +68,11 @@ draft: false
         - real experience from environment
         - simulated experience from model
     - train model free RL with both experience
-    - i.e Dyna-Q
-        ![Dyna-Q](<SmartSelect_20241004_125639_Samsung Notes.jpg>)
+    - i.e 
+        - Dyna-Q  
+            ![Dyna-Q](<SmartSelect_20241004_125639_Samsung Notes.jpg>)
+        - Dyna-Q+
+            - Dyna-Q with exploration bonus
 # Frontiers
 - **General Value Function (GVF)**
     - generalize value function to predict any signals
