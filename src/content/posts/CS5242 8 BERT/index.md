@@ -3,7 +3,7 @@ title: "[CS5242] BERT"
 published: 2024-10-08
 description: "#8 BERT, ViT, ALBERT"
 tags: ["NUS", "Neural Network & Deep Learning"]
-category: CS54242
+category: CS5242
 draft: false
 ---
 
