@@ -8,8 +8,11 @@ draft: false
 ---
 
 # BERT (**B**idirectional **E**ncoder **R**epresentations from **T**ransformers)
+
 ## Limitations of traditional NLP models
+
 > Why do we need BERT?
+
 - unidirectional context: may miss out on full context
 - task-specific conplexity: designed for specific task, may increase complexity to generalize
 - scarse pre-trained resources: 這邊老師上課的解釋是小公司沒有資源用大數據做大模型，但是Google可以
@@ -28,6 +31,7 @@ draft: false
 2. Next Sentence Prediction
     - predicts whether the given sentence is the next sentence of the current one
     - builds understanding of the relationship of sentence
+
 ### Finetune
 - We have the pretrained model, BERT can be finetuned to solve downstream tasks
 

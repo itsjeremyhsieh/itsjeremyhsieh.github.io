@@ -35,6 +35,7 @@ draft: false
 - can reduce computational cost by **local attention**
     - focuses only on the positions near the current position within the input sequence
     - restricts the attention to a local neighborhood
+    
 ## Multi-Head self attention
 - i.e. 2 heads
     ![2 head](2_head.png)
@@ -54,6 +55,7 @@ draft: false
 - same for all feature dimensions
     - Batch norm is same for all training examples
     ![layer norm](layer_norm.png)
+
 ## Decoder
 ![decoder](decoder.png)
 
