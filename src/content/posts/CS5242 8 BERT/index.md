@@ -29,7 +29,8 @@ draft: false
     - predicts whether the given sentence is the next sentence of the current one
     - builds understanding of the relationship of sentence
 ### Finetune
-    - We have the pretrained model, BERT can be finetuned to solve downstream tasks
+- We have the pretrained model, BERT can be finetuned to solve downstream tasks
+
 # ViT (Vision Transformer)
 ![ViT](vit.jpg) 
 - apply BERT directly to images
