@@ -12,7 +12,7 @@ draft: false
 - Semi-supervised learning: combine unsupervised pre-training and supervised fine-tuning for language model
 - no need to change model architecture for different tasks
 
-> Why do we use unsupervised training?
+> Why do we use **unsupervised** training?  
 A: lack of labeled data to train language model
 - But difficult.
     - unclear what type of optimization objectives
@@ -21,6 +21,7 @@ A: lack of labeled data to train language model
 - Goal: to learn an universal representation
 
 ## Architecture: Transformer Decoder
+![GPT-1 architecture](gpt1_architecture.png) 
 - Transformer: enable more structure memory for handling long-term dependencies in text
 - Decoder: decoder model using next token prediction training objective, more suitable for text generation
 
