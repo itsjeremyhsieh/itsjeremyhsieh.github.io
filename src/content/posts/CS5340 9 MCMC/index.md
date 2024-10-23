@@ -1,7 +1,7 @@
 ---
 title: "[CS5340] Monte Carlo Sampling"
 published: 2024-10-21
-description: "#8 Monte Carlo Sampling, MCMC"
+description: "#9 Monte Carlo Sampling, MCMC"
 tags: ["NUS", "Uncertainty Modelling in AI"]
 category: CS5340
 draft: false
