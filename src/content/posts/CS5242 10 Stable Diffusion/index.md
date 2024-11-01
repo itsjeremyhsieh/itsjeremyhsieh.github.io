@@ -1,7 +1,7 @@
 ---
 title: "[CS5242] Stable Diffusion"
 published: 2024-10-22
-description: "#9 Stable Diffusion"
+description: "#10 Stable Diffusion"
 tags: ["NUS", "Neural Network & Deep Learning"]
 category: CS5242
 draft: false
