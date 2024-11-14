@@ -6,7 +6,7 @@ tags: ["NUS", "Uncertainty Modelling in AI"]
 category: CS5340
 draft: false
 ---
-- Recover clean image pixels $w=\{w_1, w_2, ..., w_N\}$, given noisy observed data $x=\{x-1, x_2, ...x_N\}$
+- Recover clean image pixels $w=\{w_1, w_2, ..., w_N\}$, given noisy observed data $x=\{x_1, x_2, ...x_N\}$
 - we want to:
     1. $p(x|w)$: encourage pixels ($w$) to stay the same label as observation ($x$)
     2. $p(w_i, w_j)$: take the same label as neighbor ($w1, w2$)
