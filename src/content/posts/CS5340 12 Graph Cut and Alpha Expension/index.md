@@ -1,7 +1,7 @@
 ---
 title: "[CS5340] Graph-Cut & Alpha-Expension"
 published: 2024-11-11
-description: "#12"
+description: "#12 Graph-Cut, Alpha-Expension"
 tags: ["NUS", "Uncertainty Modelling in AI"]
 category: CS5340
 draft: false
