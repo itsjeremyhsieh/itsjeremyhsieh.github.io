@@ -1,7 +1,7 @@
 ---
 title: "[CS5446] Generative AI in Decision Making"
 published: 2024-11-06
-description: "#11 :FM, Cot, RLHF"
+description: "#11 LFM, Cot, RLHF"
 tags: ["NUS", "AI Planning"]
 category: CS5446
 draft: false
