@@ -1,5 +1,5 @@
 ---
-title: CS5224 Cloud Computing Note
+title: [CS5224] Cloud Computing Lecture Note
 published: 2025-04-16
 description: "Complete Note for NUS CS5224 Cloud Computing"
 tags: ["NUS", "Cloud Computing"]
@@ -8,6 +8,66 @@ draft: false
 ---
 
 # L1 Introduction
+- [L1 Introduction](#l1-introduction)
+  - [What is Cloud Computing?](#what-is-cloud-computing)
+  - [History](#history)
+  - [Why?](#why)
+  - [Key terms](#key-terms)
+- [L2 Concepts \& Models](#l2-concepts--models)
+  - [5 Essential Characteristics](#5-essential-characteristics)
+  - [4 Deployment Models](#4-deployment-models)
+  - [3 Service Models](#3-service-models)
+  - [Cloud Computing Reference Architecture](#cloud-computing-reference-architecture)
+    - [5 major actors](#5-major-actors)
+    - [3 layers of service orchestration](#3-layers-of-service-orchestration)
+- [L3 Cloud Architecture](#l3-cloud-architecture)
+  - [Resource Organization](#resource-organization)
+    - [Workload Distribution Architecture](#workload-distribution-architecture)
+    - [Resource Pooling Architecture](#resource-pooling-architecture)
+    - [Dynamic Scalability Architecture](#dynamic-scalability-architecture)
+    - [Elastic Resource Capacity Architecture](#elastic-resource-capacity-architecture)
+    - [Service Load Balancing Architecture](#service-load-balancing-architecture)
+    - [Scaling On-Premise Provisioning](#scaling-on-premise-provisioning)
+- [L4 Resource Hosting \& Datacenter](#l4-resource-hosting--datacenter)
+- [L5 Virtualization \& Multi-tenancy](#l5-virtualization--multi-tenancy)
+    - [Virtualization](#virtualization)
+- [L6 Applications and Paradigms](#l6-applications-and-paradigms)
+  - [Architecture](#architecture)
+    - [Web Services for Cloud Applications](#web-services-for-cloud-applications)
+  - [Cloud Application Development Models](#cloud-application-development-models)
+    - [IaaS](#iaas)
+    - [PaaS](#paas)
+    - [SaaS](#saas)
+  - [Example: Setting up a Blog](#example-setting-up-a-blog)
+    - [SaaS (Easiest)](#saas-easiest)
+    - [PaaS (More customization)](#paas-more-customization)
+    - [IaaS (Most complex)](#iaas-most-complex)
+  - [Function as a Service (FaaS)](#function-as-a-service-faas)
+    - [FaaS vs. PaaS vs. others](#faas-vs-paas-vs-others)
+    - [Lambda Function](#lambda-function)
+  - [MapReduce](#mapreduce)
+    - [Hadoop](#hadoop)
+- [L7 Example Applications](#l7-example-applications)
+  - [K-Means Clusters](#k-means-clusters)
+    - [K-Means Implementation](#k-means-implementation)
+  - [Video-sharing SaaS Cloud Application](#video-sharing-saas-cloud-application)
+    - [Upload Process](#upload-process)
+    - [Encoding Process](#encoding-process)
+    - [Streaming Process](#streaming-process)
+    - [Performance \& Scaling](#performance--scaling)
+    - [Pricing](#pricing)
+- [L8 Cloud Service Development](#l8-cloud-service-development)
+  - [SaaS vs. Traditional Software](#saas-vs-traditional-software)
+  - [Multi-tenancy levels](#multi-tenancy-levels)
+  - [Cloud-Aware Software Development Using PaaS](#cloud-aware-software-development-using-paas)
+    - [Deployment model](#deployment-model)
+  - [Dynamic Scaling](#dynamic-scaling)
+  - [Database Design](#database-design)
+  - [SaaS Development Using PaaS](#saas-development-using-paas)
+- [L9 Pricing Models and TCO](#l9-pricing-models-and-tco)
+  - [Pricing](#pricing-1)
+  - [Pricing Models](#pricing-models)
+- [L10](#l10)
 
 ## What is Cloud Computing?
 
