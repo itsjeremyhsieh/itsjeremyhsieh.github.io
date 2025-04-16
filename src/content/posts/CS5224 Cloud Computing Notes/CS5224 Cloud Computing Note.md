@@ -1,5 +1,5 @@
 ---
-title: [CS5224] Cloud Computing Lecture Note
+title: "[CS5224] Cloud Computing Lecture Note"
 published: 2025-04-16
 description: "Complete Note for NUS CS5224 Cloud Computing"
 tags: ["NUS", "Cloud Computing"]
@@ -7,7 +7,6 @@ category: CS5224
 draft: false
 ---
 
-# L1 Introduction
 - [L1 Introduction](#l1-introduction)
   - [What is Cloud Computing?](#what-is-cloud-computing)
   - [History](#history)
@@ -69,6 +68,7 @@ draft: false
   - [Pricing Models](#pricing-models)
 - [L10](#l10)
 
+# L1 Introduction
 ## What is Cloud Computing?
 
 **On-demand service** + **Elastic resource**
