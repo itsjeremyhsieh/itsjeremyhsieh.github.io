@@ -4,10 +4,10 @@ published: 2025-04-17
 description: "終於換新電腦啦！"
 tags: ["MacBook Pro"]
 category: 開箱
+image: ./EWJ.png
 draft: false
 ---
 
-![Apple!](apple.jpg)
 # Hello MacBook!
 距離我上次換電腦已經快五年了！上一台是 Samsung 的 Galaxy Book Flex 15.6（2020年款）。
 當初會選它，主要是因為那台電腦實在太漂亮了，寶石藍的機身、QLED 觸控螢幕，加上三星生態圈獨有的串聯功能，全都只要三萬塊就能入手，真的超值。
