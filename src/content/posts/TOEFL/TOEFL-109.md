@@ -1,7 +1,7 @@
 ---
 title: "[英文檢定] TOEFL 109分準備心得"
 published: 2025-04-17
-description: "終於換新電腦啦！"
+description: "我的托福 TOEFL 109分準備心得"
 tags: ["TOEFL"]
 category: 英文檢定
 image: ./EWJ.png
