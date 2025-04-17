@@ -1,5 +1,5 @@
 ---
-title: "Hello MacBook！人生第二台蘋果電腦報到！M4 Pro MacBook Pro 使用心得"
+title: "人生第二台蘋果電腦報到！M4 Pro MacBook Pro 使用心得"
 published: 2025-04-17
 description: "終於換新電腦啦！"
 tags: ["MacBook Pro"]
