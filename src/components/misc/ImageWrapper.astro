@@ -1,4 +1,3 @@
----
 import path from 'path'
 interface Props {
   id?: string
@@ -29,22 +28,17 @@ if (isLocal) {
   const files = import.meta.glob<ImageMetadata>('../../**', {
     import: 'default',
   })
-  let normalizedPath = path
+  const normalizedPath = path
     .normalize(path.join('../../', basePath, src))
     .replace(/\\/g, '/')
   const file = files[normalizedPath]
   if (!file) {
-    console.error(`\n[ERROR] Image file not found: ${normalizedPath.replace('../../', 'src/')}`)
+    console.error(
+      `\n[ERROR] Image file not found: ${normalizedPath.replace('../../', 'src/')}`,
+    )
   }
   img = await file()
 }
 
-const imageClass = 'w-full h-full object-cover'
+const imageClass = 'w-full h-full object-contain'
 const imageStyle = `object-position: ${position}`
----
-<div id={id} class:list={[className, 'overflow-hidden relative']}>
-    <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>
-    {isLocal && img && <Image src={img} alt={alt || ""} class={imageClass} style={imageStyle}/>}
-    {!isLocal && <img src={isPublic ? url(src) : src} alt={alt || ""} class={imageClass} style={imageStyle}/>}
-</div>
-
