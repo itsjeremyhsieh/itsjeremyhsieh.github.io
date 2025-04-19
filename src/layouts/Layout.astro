@@ -61,12 +61,12 @@ if (!lang) {
 const siteLang = lang.replace('_', '-')
 
 const bannerOffsetByPosition = {
-	'top': '30vh',
-	'center': '15vh',
-	'bottom': '0'
+  top: '30vh',
+  center: '15vh',
+  bottom: '0',
 }
-const bannerOffset = bannerOffsetByPosition[siteConfig.banner.position || 'center']
-
+const bannerOffset =
+  bannerOffsetByPosition[siteConfig.banner.position || 'center']
 ---
 
 <!DOCTYPE html>
@@ -126,13 +126,13 @@ const bannerOffset = bannerOffsetByPosition[siteConfig.banner.position || 'cente
 		</script>
 
 		<!-- Google tag (gtag.js) -->
-		<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-1M7YV6DXRR"></script>
+		<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-LP2KFR55FP"></script>
 		<script type="text/partytown">
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'MEASUREMENT_ID');
+		gtag('config', 'G-LP2KFR55FP');
 		</script>
 
 		<slot name="head"></slot>
