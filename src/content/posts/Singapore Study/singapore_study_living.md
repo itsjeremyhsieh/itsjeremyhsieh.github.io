@@ -18,6 +18,8 @@ draft: false
 
 現在回頭看，當時那種又期待又焦慮的心情，至今仍記憶猶新。
 
+---
+
 # 新加坡國立大學介紹
 新加坡國立大學（National University of Singapore, NUS）是亞洲最具聲望的高等學府之一，長期位居全球大學排行榜前列。創立於1905年，NUS 擁有超過一世紀的歷史，最初是作為英國殖民地時期的醫學學校成立，如今已發展成為一所綜合性研究型大學，提供多元化的學術課程與國際化的學習環境。  
 
@@ -31,10 +33,7 @@ NUS School of Computing（計算機學院） 就設在 Kent Ridge 校區，鄰�
 
 完整地圖可參照 [NUS 官網](https://map.nus.edu.sg)
 
-<figure>
-  <img src="school_campus.png" alt="NUS 地圖">
-  <figcaption>新加坡國立大學 Kent Ridge 校區地圖</figcaption>
-</figure>
+![新加坡國立大學 Kent Ridge 校區地圖](school_campus.png)
 
 ## 通勤與交通
 NUS 校園非常大，Kent Ridge 校區本身就像一個小城市。為了方便師生移動，學校提供 免費的校園穿梭巴士（NUS Internal Shuttle Bus），每幾分鐘一班，依照不同路線（A, B, C, D 等）將學生送往各個學院、宿舍與捷運站。
@@ -50,10 +49,8 @@ NUS 整個校區遍布著各式的遍布著各式的 food court，且價格比�
 - Frontier（Science 食堂）：靠近理學院，也是不少人下課就直奔的地方。
 - Terrance（Computing 食堂）：最靠近計算機學院的食堂，2024年新開幕，但選擇較少。
 
-<figure>
-  <img src="food.png" alt="我在 Techno Edge 吃到的4元 Western">
-  <figcaption>我在 Techno Edge 吃到的4元 Western</figcaption>
-</figure>
+![我在 Techno Edge 吃到的4元 Western](food.png)
+這張圖是我在Techno Edge 吃到的4元 Western。
 
 ## 課程
 
