@@ -52,7 +52,7 @@ NUS 整個校區遍布著各式的遍布著各式的 food court，且價格比�
 ![我在 Techno Edge 吃到的4元 Western](food.png)
 這張圖是我在Techno Edge 吃到的4元 Western。
 
-## 課程
+# 課程
 
 ## 在 NUS 修課的一年：從挫折到成就感的轉折
 
