@@ -49,7 +49,7 @@ NUS 整個校區遍布著各式的遍布著各式的 food court，且價格比�
 - Frontier（Science 食堂）：靠近理學院，也是不少人下課就直奔的地方。
 - Terrance（Computing 食堂）：最靠近計算機學院的食堂，2024年新開幕，但選擇較少。
 
-![我在 Techno Edge 吃到的4元 Western](food.png){width=600}
+![我在 Techno Edge 吃到的4元 Western](food.png)
 這張圖是我在Techno Edge 吃到的4元 Western。
 
 # 課程
