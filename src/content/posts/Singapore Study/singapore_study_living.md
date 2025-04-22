@@ -35,6 +35,8 @@ NUS School of Computing（計算機學院） 就設在 Kent Ridge 校區，鄰�
 
 ![新加坡國立大學 Kent Ridge 校區地圖](school_campus.png)
 
+<img src="school_campus.png" alt="新加坡國立大學 Kent Ridge 校區地圖" width="800"/>
+
 ## 通勤與交通
 NUS 校園非常大，Kent Ridge 校區本身就像一個小城市。為了方便師生移動，學校提供 免費的校園穿梭巴士（NUS Internal Shuttle Bus），每幾分鐘一班，依照不同路線（A, B, C, D 等）將學生送往各個學院、宿舍與捷運站。
 
@@ -50,7 +52,8 @@ NUS 整個校區遍布著各式的遍布著各式的 food court，且價格比�
 - Terrance（Computing 食堂）：最靠近計算機學院的食堂，2024年新開幕，但選擇較少。
 
 ![我在 Techno Edge 吃到的4元 Western](food.png)
-這張圖是我在Techno Edge 吃到的4元 Western。
+
+<img src="food.png" alt="我在 Techno Edge 吃到的4元 Western" width="600"/>
 
 # 課程
 
