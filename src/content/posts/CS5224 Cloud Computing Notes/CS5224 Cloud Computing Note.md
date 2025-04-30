@@ -1,5 +1,5 @@
 ---
-title: "[CS5224] Cloud Computing Lecture Note"
+title: "[NUS CS5224] Cloud Computing Lecture Note"
 published: 2025-04-16
 description: "Complete Note for NUS CS5224 Cloud Computing"
 tags: ["NUS", "Cloud Computing"]
