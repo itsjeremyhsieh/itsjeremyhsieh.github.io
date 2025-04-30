@@ -242,7 +242,7 @@ combiners locally aggregate output from mappers (preprocessing, mini-reducers)
 
 - user’s responsibility to ensure combiner doesn’t affect the correctness of final output.
     - Combiner may run 0, 1 or multiple times, based on the code
-    - 要保證不管跑幾次都不會影響結果（可以跑max, min，但不能跑 mean, add, minus，因為$mean(1,1,2)$$\neq$ $mean((1,1), 2)$
+    - 要保證不管跑幾次都不會影響結果（可以跑max, min，但不能跑 mean, add, minus，因為$mean(1,1,2)\neq mean((1,1), 2)$
 - e.g. Map → A:1 B:1 A:1 → Combiner → A:2 B:1 → Shuffle
 
 **Both done during the local write**
